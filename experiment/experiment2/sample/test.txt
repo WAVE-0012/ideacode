@@ -1,0 +1,3 @@
+Hello ByteScope!
+This is a test file for Java ByteScope experiment.
+0123456789 ABCDEF

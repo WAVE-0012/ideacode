@@ -67,98 +67,139 @@ public class Arithmetic extends JFrame {
         minComboBox.setPrototypeDisplayValue(10000);
         maxComboBox.setPrototypeDisplayValue(10000);
 
-        // 初始化复选框
+        // 初始化复选框（默认勾选 加、减）
         addCheckBox = new JCheckBox("加");
         subCheckBox = new JCheckBox("减");
         mulCheckBox = new JCheckBox("乘");
         divCheckBox = new JCheckBox("除");
-
-        // 初始勾选加法和乘法
         addCheckBox.setSelected(true);
-        mulCheckBox.setSelected(true);
+        subCheckBox.setSelected(true);
+        mulCheckBox.setSelected(false);
+        divCheckBox.setSelected(false);
 
-        // 初始化按钮和标签
+        // 初始化按钮
         generateButton = new JButton("生成新算式");
-        expressionLabel = new JLabel("          ");
-        expressionLabel.setFont(new Font("宋体", Font.BOLD, 18));
-        expressionLabel.setBorder(BorderFactory.createEtchedBorder());
-        expressionLabel.setOpaque(true);
-        expressionLabel.setBackground(Color.WHITE);
-
-        resultField = new JTextField(15);
         judgeButton = new JButton("判题");
         viewAnswerButton = new JButton("查看答案");
+
+        // 算式标签：
+        expressionLabel = new JLabel("请点击生成新算式");
+        expressionLabel.setFont(new Font("Arial", Font.PLAIN, 24));
+
+        resultField = new JTextField(15);
     }
 
     private void setupLayout() {
         setTitle("四则运算出题小软件--by241002302张颢议");
+        setSize(525, 270);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLayout(new BorderLayout(10, 10));
-
-        JPanel mainPanel = new JPanel(new GridBagLayout());
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.insets = new Insets(5, 5, 5, 5);
-        gbc.fill = GridBagConstraints.HORIZONTAL;
-
-        // 第1部分：操作数范围
-        JPanel rangePanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        rangePanel.setBorder(null);
-        rangePanel.add(new JLabel("请选择一个操作数的最小值:"));
-        rangePanel.add(minComboBox);
-        rangePanel.add(new JLabel("请选择一个操作数的最大值:"));
-        rangePanel.add(maxComboBox);
-        gbc.gridx = 0;
-        gbc.gridy = 0;
-        gbc.gridwidth = 2;
-        mainPanel.add(rangePanel, gbc);
-
-        // 第2部分：四则运算类型
-        JPanel operationPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        operationPanel.setBorder(null);
-        operationPanel.add(new JLabel("请选择运算类型:"));
-        operationPanel.add(addCheckBox);
-        operationPanel.add(subCheckBox);
-        operationPanel.add(mulCheckBox);
-        operationPanel.add(divCheckBox);
-        gbc.gridy = 1;
-        mainPanel.add(operationPanel, gbc);
-
-        // 第3部分：算式生成部分
-        JPanel generatePanel = new JPanel(new BorderLayout(10, 5));
-        generatePanel.setBorder(null);
-        generatePanel.add(generateButton, BorderLayout.WEST);
-        generatePanel.add(expressionLabel, BorderLayout.CENTER);
-        gbc.gridy = 2;
-        mainPanel.add(generatePanel, gbc);
-
-        // 第4和第5部分：
-        JPanel bottomPanel = new JPanel(new BorderLayout(10, 10));
-        bottomPanel.setBorder(null);
-
-        // 左侧：运算结果
-        JPanel resultPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 10, 10));
-        resultPanel.add(new JLabel("你的运算结果:"));
-        resultField.setPreferredSize(new Dimension(150, 30));
-        resultPanel.add(resultField);
-        bottomPanel.add(resultPanel, BorderLayout.WEST);
-
-        // 右侧：判题和看答案
-        JPanel actionPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 20, 10));
-        judgeButton.setPreferredSize(new Dimension(100, 35));
-        viewAnswerButton.setPreferredSize(new Dimension(100, 35));
-        actionPanel.add(judgeButton);
-        actionPanel.add(viewAnswerButton);
-        bottomPanel.add(actionPanel, BorderLayout.EAST);
-
-        gbc.gridy = 3;
-        gbc.gridwidth = 2;
-        gbc.fill = GridBagConstraints.BOTH;
-        mainPanel.add(bottomPanel, gbc);
-
-        add(mainPanel, BorderLayout.CENTER);
-
-        setSize(600, 350);
         setLocationRelativeTo(null);
+
+        setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
+        ((JPanel)getContentPane()).setBorder(BorderFactory.createEmptyBorder(2, 0, 0, 0));
+
+        Font labelFont = new Font("微软雅黑", Font.PLAIN, 16);
+        Font comboFont = new Font("微软雅黑", Font.PLAIN, 14);
+        Font buttonFont = new Font("微软雅黑", Font.PLAIN, 16);
+        Font resultFont = new Font("微软雅黑", Font.PLAIN, 18);
+
+        // === 第1行：操作数范围 ===
+        JPanel rangePanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 5, 1));
+        rangePanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+
+        JLabel minLabel = new JLabel("请选择操作数的最小值：");
+        minLabel.setFont(labelFont);
+        rangePanel.add(minLabel);
+
+        minComboBox = new JComboBox<>();
+        // 注意：这里使用你的 MAX_RANGE_VALUE
+        for (int i = 2; i <= MAX_RANGE_VALUE; i++) minComboBox.addItem(i);
+        minComboBox.setSelectedItem(DEFAULT_MIN);
+        minComboBox.setFont(comboFont);
+        minComboBox.setPreferredSize(new Dimension(67, 35));
+        rangePanel.add(minComboBox);
+
+        JLabel maxLabel = new JLabel("请选择操作数的最大值：");
+        maxLabel.setFont(labelFont);
+        rangePanel.add(maxLabel);
+
+        maxComboBox = new JComboBox<>();
+        for (int i = 10; i <= MAX_RANGE_VALUE; i++) maxComboBox.addItem(i);
+        maxComboBox.setSelectedItem(DEFAULT_MAX);
+        maxComboBox.setFont(comboFont);
+        maxComboBox.setPreferredSize(new Dimension(67, 35));
+        rangePanel.add(maxComboBox);
+
+        add(rangePanel);
+
+        // === 第2行：运算类型 ===
+        JPanel typePanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 5, 1));
+        typePanel.setAlignmentX(0.0f);
+
+        JLabel typeLabel = new JLabel("请选择运算类型：");
+        typeLabel.setFont(labelFont);
+        typePanel.add(typeLabel);
+        typePanel.add(Box.createRigidArea(new Dimension(30, 0)));
+
+        addCheckBox = new JCheckBox("加", true);
+        subCheckBox = new JCheckBox("减", true);
+        mulCheckBox = new JCheckBox("乘", false);
+        divCheckBox = new JCheckBox("除", false);
+
+        addCheckBox.setFont(labelFont);
+        subCheckBox.setFont(labelFont);
+        mulCheckBox.setFont(labelFont);
+        divCheckBox.setFont(labelFont);
+
+        typePanel.add(addCheckBox);
+        typePanel.add(Box.createRigidArea(new Dimension(35, 0)));
+        typePanel.add(subCheckBox);
+        typePanel.add(Box.createRigidArea(new Dimension(35, 0)));
+        typePanel.add(mulCheckBox);
+        typePanel.add(Box.createRigidArea(new Dimension(35, 0)));
+        typePanel.add(divCheckBox);
+
+        add(typePanel);
+
+        // === 第3行：算式生成 ===
+        JPanel exprPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 5, 1));
+        exprPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+
+        generateButton = new JButton("生成新算式");
+        generateButton.setFont(buttonFont);
+        generateButton.setPreferredSize(new Dimension(120, 35));
+        exprPanel.add(generateButton);
+
+        expressionLabel = new JLabel("");
+        expressionLabel.setFont(new Font("Arial", Font.PLAIN, 24));
+        exprPanel.add(expressionLabel);
+
+        add(exprPanel);
+
+        // === 第4行：运算结果 + 判题 + 查看答案 ===
+        JPanel resultPanel = new JPanel(new FlowLayout(FlowLayout.LEFT, 5, 1));
+        resultPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
+
+        JLabel resultLabel = new JLabel("你的运算结果：");
+        resultLabel.setFont(labelFont);
+        resultPanel.add(resultLabel);
+
+        resultField = new JTextField(10);
+        resultField.setFont(resultFont);
+        resultField.setPreferredSize(new Dimension(100, 40));
+        resultPanel.add(resultField);
+
+        judgeButton = new JButton("判题");
+        judgeButton.setFont(buttonFont);
+        judgeButton.setPreferredSize(new Dimension(100, 40));
+        resultPanel.add(judgeButton);
+
+        viewAnswerButton = new JButton("查看答案");
+        viewAnswerButton.setFont(buttonFont);
+        viewAnswerButton.setPreferredSize(new Dimension(100, 40));
+        resultPanel.add(viewAnswerButton);
+
+        add(resultPanel);
     }
 
     private void setDefaultValues() {
@@ -338,10 +379,8 @@ public class Arithmetic extends JFrame {
             int correctAnswer = Integer.parseInt(currentAnswer);
 
             if (userAnswer == correctAnswer) {
-                JOptionPane.showMessageDialog(this,
-                        "回答正确！恭喜你！",
-                        "恭喜",
-                        JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(this, "回答正确！");
+                generateNewExpression();
             } else {
                 JOptionPane.showMessageDialog(this,
                         "计算错误！" + "\n请重新计算或查看答案。",
@@ -365,19 +404,16 @@ public class Arithmetic extends JFrame {
             return;
         }
 
-        String answerMessage = currentExpression.replace("?", "") + currentAnswer;
         JOptionPane.showMessageDialog(this,
-                answerMessage,
-                "正确答案",
-                JOptionPane.INFORMATION_MESSAGE);
+                currentOperand1 + " " + currentOperator + " " + currentOperand2 + " = " + currentAnswer);
     }
 
     public static void main(String[] args) {
-        try {
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        try {
+//            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
 
         SwingUtilities.invokeLater(new Runnable() {
             @Override

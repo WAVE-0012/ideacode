@@ -1,0 +1,308 @@
+package test;
+public class Test {
+    public static void main(String[] args) {
+        System.out.println("ByteScope Test");
+        int a = 0x12;
+        byte b = 0x34;
+        char c = 'A';
+        // Test comment
+        try {
+            System.out.println(a + b);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+/*
+Multi-line comment for byte test
+1234567890abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+!@#$%^&*()_+-=[]{};':\",./<>?
+*/\r\n\t\b\f
+中文测试 Chinese Test
+✅🔥🚀
+ByteScope Test File - 20KB Sample
+This file is designed for Java ByteScope experiment.
+It contains English letters, numbers, symbols, newlines, spaces, and repeated content to reach about 20KB.
+You can use this file to test file reading, hex display, paging, up/down page, first page, last page, jump page, save result functions.
+
+0123456789 ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz
+!@#$%^&*()_+-=[]{};':\",./<>?`~
+Line 1: Test data for byte view
+Line 2: Each byte will be displayed as two hex digits
+Line 3: File size about 20KB
+Line 4: Suitable for paging display test
+Line 5: Java IO Stream Test
+Line 6: Swing GUI Test
+Line 7: Exception Handling Test
+Line 8: File Save Test
+Line 9: Hex Format Output Test
+Line 10: Byte Analysis Tool
+
+================================================================================
+REPEATED BLOCK START (to make file 20KB)
+================================================================================
+A a B b C c D d E e F f G g H h I i J j K k L l M m
+N n O o P p Q q R r S s T t U u V v W w X x Y y Z z
+0 1 2 3 4 5 6 7 8 9
+! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
+Line: 0001 | Byte: 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+Line: 0002 | Byte: 10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+Line: 0003 | Byte: 20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+Line: 0004 | Byte: 30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+Line: 0005 | Byte: 40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+Line: 0006 | Byte: 50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+Line: 0007 | Byte: 60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+Line: 0008 | Byte: 70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+Line: 0009 | Data for testing hexadecimal display format
+Line: 0010 | Each byte two hex characters, aligned display
+Line: 0011 | Testing page turning: prev page next page first last
+Line: 0012 | Testing jump to page function
+Line: 0013 | Testing file save to txt function
+Line: 0014 | Testing GUI button status: enable / disable
+Line: 0015 | Testing empty file, normal file, large file
+Line: 0016 | Testing exception: file not found, invalid page number
+Line: 0017 | Java ByteScope Experiment - Beijing Forestry University
+Line: 0018 | Course: Java Programming Lab 2
+Line: 0019 | Teacher: Wang Jianxin
+Line: 0020 | Student: [Your Name] [Your Student ID]
+
+A a B b C c D d E e F f G g H h I i J j K k L l M m
+N n O o P p Q q R r S s T t U u V v W w X x Y y Z z
+0 1 2 3 4 5 6 7 8 9
+! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
+Line: 0021 | Byte: 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+Line: 0022 | Byte: 10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+Line: 0023 | Byte: 20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+Line: 0024 | Byte: 30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+Line: 0025 | Byte: 40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+Line: 0026 | Byte: 50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+Line: 0027 | Byte: 60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+Line: 0028 | Byte: 70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+Line: 0029 | Data for testing hexadecimal display format
+Line: 0030 | Each byte two hex characters, aligned display
+Line: 0031 | Testing page turning: prev page next page first last
+Line: 0032 | Testing jump to page function
+Line: 0033 | Testing file save to txt function
+Line: 0034 | Testing GUI button status: enable / disable
+Line: 0035 | Testing empty file, normal file, large file
+Line: 0036 | Testing exception: file not found, invalid page number
+Line: 0037 | Java ByteScope Experiment - Beijing Forestry University
+Line: 0038 | Course: Java Programming Lab 2
+Line: 0039 | Teacher: Wang Jianxin
+Line: 0040 | Student: [Your Name] [Your Student ID]
+
+================================================================================
+REPEAT THE ABOVE CONTENT MANY TIMES TO REACH 20KB
+================================================================================
+
+A a B b C c D d E e F f G g H h I i J j K k L l M m
+N n O o P p Q q R r S s T t U u V v W w X x Y y Z z
+0 1 2 3 4 5 6 7 8 9
+! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
+Line: 0041 | Byte: 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+Line: 0042 | Byte: 10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+Line: 0043 | Byte: 20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+Line: 0044 | Byte: 30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+Line: 0045 | Byte: 40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+Line: 0046 | Byte: 50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+Line: 0047 | Byte: 60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+Line: 0048 | Byte: 70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+Line: 0049 | Data for testing hexadecimal display format
+Line: 0050 | Each byte two hex characters, aligned display
+Line: 0051 | Testing page turning: prev page next page first last
+Line: 0052 | Testing jump to page function
+Line: 0053 | Testing file save to txt function
+Line: 0054 | Testing GUI button status: enable / disable
+Line: 0055 | Testing empty file, normal file, large file
+Line: 0056 | Testing exception: file not found, invalid page number
+Line: 0057 | Java ByteScope Experiment - Beijing Forestry University
+Line: 0058 | Course: Java Programming Lab 2
+Line: 0059 | Teacher: Wang Jianxin
+Line: 0060 | Student: [Your Name] [Your Student ID]
+
+A a B b C c D d E e F f G g H h I i J j K k L l M m
+N n O o P p Q q R r S s T t U u V v W w X x Y y Z z
+0 1 2 3 4 5 6 7 8 9
+! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
+Line: 0061 | Byte: 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+Line: 0062 | Byte: 10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+Line: 0063 | Byte: 20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+Line: 0064 | Byte: 30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+Line: 0065 | Byte: 40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+Line: 0066 | Byte: 50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+Line: 0067 | Byte: 60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+Line: 0068 | Byte: 70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+Line: 0069 | Data for testing hexadecimal display format
+Line: 0070 | Each byte two hex characters, aligned display
+Line: 0071 | Testing page turning: prev page next page first last
+Line: 0072 | Testing jump to page function
+Line: 0073 | Testing file save to txt function
+Line: 0074 | Testing GUI button status: enable / disable
+Line: 0075 | Testing empty file, normal file, large file
+Line: 0076 | Testing exception: file not found, invalid page number
+Line: 0077 | Java ByteScope Experiment - Beijing Forestry University
+Line: 0078 | Course: Java Programming Lab 2
+Line: 0079 | Teacher: Wang Jianxin
+Line: 0080 | Student: [Your Name] [Your Student ID]
+
+ByteScope Test File - 20KB Official Sample
+This file is specially made for Java Programming Lab 2: ByteScope.
+It contains letters, numbers, symbols, line breaks, spaces, tabs, and repeated blocks to ensure the file size is around 20KB.
+You can use this file to test: file reading, hexadecimal display, paging, page up/down, first page, last page, jump to page, save result to txt, GUI button status, exception handling.
+
+================================================================================
+BASE DATA BLOCK
+================================================================================
+0123456789 ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz
+!@#$%^&*()_+-=[]{};':\",./<>?`~
+Line 0001 | ByteScope Test | Hex: 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+Line 0002 | ByteScope Test | Hex: 10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+Line 0003 | ByteScope Test | Hex: 20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+Line 0004 | ByteScope Test | Hex: 30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+Line 0005 | ByteScope Test | Hex: 40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+Line 0006 | ByteScope Test | Hex: 50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+Line 0007 | ByteScope Test | Hex: 60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+Line 0008 | ByteScope Test | Hex: 70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+
+A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U u V v W w X x Y y Z z
+0 1 2 3 4 5 6 7 8 9
+! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
+
+================================================================================
+REPEAT BLOCK START (TO MAKE 20KB)
+================================================================================
+
+Line 0010 | Java IO Stream Test | FileInputStream | Read byte by byte
+Line 0011 | Swing GUI Test | JFrame | JButton | JTextArea | JFileChooser
+Line 0012 | Exception Handling | FileNotFoundException | IOException | NumberFormatException
+Line 0013 | Paging Test | Total bytes | Total pages | Current page | Offset
+Line 0014 | Button Control | First | Prev | Next | Last | Jump | Enable | Disable
+Line 0015 | Save Test | Choose directory | Input filename | Save as txt | Check content
+Line 0016 | Robustness | File not exist | Empty file | Invalid page | Negative page
+Line 0017 | Course: Java Programming Lab 2 | ByteScope | Beijing Forestry University
+Line 0018 | Teacher: Wang Jianxin | Student: [Your ID] [Your Name]
+Line 0019 | Each byte is displayed as two hex digits | Aligned format | Address header
+Line 0020 | File size: About 20KB | Suitable for all test cases
+
+A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U u V v W w X x Y y Z z
+0 1 2 3 4 5 6 7 8 9
+! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
+Line 0021 | Hex: 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+Line 0022 | Hex: 10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+Line 0023 | Hex: 20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+Line 0024 | Hex: 30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+Line 0025 | Hex: 40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+Line 0026 | Hex: 50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+Line 0027 | Hex: 60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+Line 0028 | Hex: 70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+
+Line 0030 | Java IO Stream Test | FileInputStream | Read byte by byte
+Line 0031 | Swing GUI Test | JFrame | JButton | JTextArea | JFileChooser
+Line 0032 | Exception Handling | FileNotFoundException | IOException | NumberFormatException
+Line 0033 | Paging Test | Total bytes | Total pages | Current page | Offset
+Line 0034 | Button Control | First | Prev | Next | Last | Jump | Enable | Disable
+Line 0035 | Save Test | Choose directory | Input filename | Save as txt | Check content
+Line 0036 | Robustness | File not exist | Empty file | Invalid page | Negative page
+Line 0037 | Course: Java Programming Lab 2 | ByteScope | Beijing Forestry University
+Line 0038 | Teacher: Wang Jianxin | Student: [Your ID] [Your Name]
+Line 0039 | Each byte is displayed as two hex digits | Aligned format | Address header
+Line 0040 | File size: About 20KB | Suitable for all test cases
+
+A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U u V v W w X x Y y Z z
+0 1 2 3 4 5 6 7 8 9
+! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
+Line 0041 | Hex: 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+Line 0042 | Hex: 10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+Line 0043 | Hex: 20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+Line 0044 | Hex: 30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+Line 0045 | Hex: 40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+Line 0046 | Hex: 50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+Line 0047 | Hex: 60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+Line 0048 | Hex: 70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+
+Line 0050 | Java IO Stream Test | FileInputStream | Read byte by byte
+Line 0051 | Swing GUI Test | JFrame | JButton | JTextArea | JFileChooser
+Line 0052 | Exception Handling | FileNotFoundException | IOException | NumberFormatException
+Line 0053 | Paging Test | Total bytes | Total pages | Current page | Offset
+Line 0054 | Button Control | First | Prev | Next | Last | Jump | Enable | Disable
+Line 0055 | Save Test | Choose directory | Input filename | Save as txt | Check content
+Line 0056 | Robustness | File not exist | Empty file | Invalid page | Negative page
+Line 0057 | Course: Java Programming Lab 2 | ByteScope | Beijing Forestry University
+Line 0058 | Teacher: Wang Jianxin | Student: [Your ID] [Your Name]
+Line 0059 | Each byte is displayed as two hex digits | Aligned format | Address header
+Line 0060 | File size: About 20KB | Suitable for all test cases
+
+A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U u V v W w X x Y y Z z
+0 1 2 3 4 5 6 7 8 9
+! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
+Line 0061 | Hex: 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+Line 0062 | Hex: 10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+Line 0063 | Hex: 20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+Line 0064 | Hex: 30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+Line 0065 | Hex: 40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+Line 0066 | Hex: 50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+Line 0067 | Hex: 60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+Line 0068 | Hex: 70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+
+Line 0070 | Java IO Stream Test | FileInputStream | Read byte by byte
+Line 0071 | Swing GUI Test | JFrame | JButton | JTextArea | JFileChooser
+Line 0072 | Exception Handling | FileNotFoundException | IOException | NumberFormatException
+Line 0073 | Paging Test | Total bytes | Total pages | Current page | Offset
+Line 0074 | Button Control | First | Prev | Next | Last | Jump | Enable | Disable
+Line 0075 | Save Test | Choose directory | Input filename | Save as txt | Check content
+Line 0076 | Robustness | File not exist | Empty file | Invalid page | Negative page
+Line 0077 | Course: Java Programming Lab 2 | ByteScope | Beijing Forestry University
+Line 0078 | Teacher: Wang Jianxin | Student: [Your ID] [Your Name]
+Line 0079 | Each byte is displayed as two hex digits | Aligned format | Address header
+Line 0080 | File size: About 20KB | Suitable for all test cases
+
+A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U u V v W w X x Y y Z z
+0 1 2 3 4 5 6 7 8 9
+! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
+Line 0081 | Hex: 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+Line 0082 | Hex: 10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+Line 0083 | Hex: 20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+Line 0084 | Hex: 30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+Line 0085 | Hex: 40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+Line 0086 | Hex: 50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+Line 0087 | Hex: 60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+Line 0088 | Hex: 70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+
+Line 0090 | Java IO Stream Test | FileInputStream | Read byte by byte
+Line 0091 | Swing GUI Test | JFrame | JButton | JTextArea | JFileChooser
+Line 0092 | Exception Handling | FileNotFoundException | IOException | NumberFormatException
+Line 0093 | Paging Test | Total bytes | Total pages | Current page | Offset
+Line 0094 | Button Control | First | Prev | Next | Last | Jump | Enable | Disable
+Line 0095 | Save Test | Choose directory | Input filename | Save as txt | Check content
+Line 0096 | Robustness | File not exist | Empty file | Invalid page | Negative page
+Line 0097 | Course: Java Programming Lab 2 | ByteScope | Beijing Forestry University
+Line 0098 | Teacher: Wang Jianxin | Student: [Your ID] [Your Name]
+Line 0099 | Each byte is displayed as two hex digits | Aligned format | Address header
+Line 0100 | File size: About 20KB | Suitable for all test cases
+
+A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U u V v W w X x Y y Z z
+0 1 2 3 4 5 6 7 8 9
+! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { | } ~
+Line 0101 | Hex: 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
+Line 0102 | Hex: 10 11 12 13 14 15 16 17 18 19 1A 1B 1C 1D 1E 1F
+Line 0103 | Hex: 20 21 22 23 24 25 26 27 28 29 2A 2B 2C 2D 2E 2F
+Line 0104 | Hex: 30 31 32 33 34 35 36 37 38 39 3A 3B 3C 3D 3E 3F
+Line 0105 | Hex: 40 41 42 43 44 45 46 47 48 49 4A 4B 4C 4D 4E 4F
+Line 0106 | Hex: 50 51 52 53 54 55 56 57 58 59 5A 5B 5C 5D 5E 5F
+Line 0107 | Hex: 60 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F
+Line 0108 | Hex: 70 71 72 73 74 75 76 77 78 79 7A 7B 7C 7D 7E 7F
+
+Line 0110 | Java IO Stream Test | FileInputStream | Read byte by byte
+Line 0111 | Swing GUI Test | JFrame | JButton | JTextArea | JFileChooser
+Line 0112 | Exception Handling | FileNotFoundException | IOException | NumberFormatException
+Line 0113 | Paging Test | Total bytes | Total pages | Current page | Offset
+Line 0114 | Button Control | First | Prev | Next | Last | Jump | Enable | Disable
+Line 0115 | Save Test | Choose directory | Input filename | Save as txt | Check content
+Line 0116 | Robustness | File not exist | Empty file | Invalid page | Negative page
+Line 0117 | Course: Java Programming Lab 2 | ByteScope | Beijing Forestry University
+Line 0118 | Teacher: Wang Jianxin | Student: [Your ID] [Your Name]
+Line 0119 | Each byte is displayed as two hex digits | Aligned format | Address header
+Line 0120 | File size: About 20KB | Suitable for all test cases
+
+--- END OF 18KB TEST FILE ---
