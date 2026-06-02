@@ -12,3 +12,14 @@ out/
 # Java 编译文件
 *.class
 target/
+
+# 视频文件
+*.mp4
+*.avi
+*.mov
+*.wmv
+
+# 文档文件（根据需要）
+*.doc
+*.docx
+*.pdf
